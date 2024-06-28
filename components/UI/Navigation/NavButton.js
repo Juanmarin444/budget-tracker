@@ -4,7 +4,7 @@ import { Nunito_Sans } from "next/font/google";
 
 const nunitoSans = Nunito_Sans ({subsets: ['latin']});
 
-export default function NavButton ({text, href, myStyles, dropDown, dropDownItems = [], children}) {
+export default function NavButton ({text, href, myStyles, dropDown, dropDownItems = [], dropDownStyles, children}) {
     return (
         <div className="relative group">
             {href === undefined ? (
@@ -17,7 +17,7 @@ export default function NavButton ({text, href, myStyles, dropDown, dropDownItem
             )}
             
             {dropDown && (
-                <DropDownMenu items={dropDownItems}/>
+                <DropDownMenu items={dropDownItems} dropDownStyles={dropDownStyles}/>
             )}
         </div>
     );

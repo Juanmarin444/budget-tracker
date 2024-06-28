@@ -18,18 +18,20 @@ export default function NavBar ({toggleDropdown}) {
 
     return (
         <div className="flex flex-row justify-between bg-gray-50 text-stone-800 p-4">
-            <Logo />
+            <div className="md:w-5/12 lg:w-6/12">
+                <Logo />
+            </div>
 
             {/* Navigation Buttons */}
             <section className={`hidden md:flex md:justify-around md:items-center md:w-7/12 lg:w-6/12`}>
-                <NavButton text="Features" dropDown={true} dropDownItems={features}>
+                <NavButton text="Features" dropDown={true} dropDownItems={features} dropDownStyles="hover:!text-stone-800 !font-bold !justify-start !py-3 !cursor-default">
                     <ChevronDownIcon className="h-3 w-3" />
                 </NavButton>
-                <NavButton text="How&nbsp;it&nbsp;works" dropDown={true} dropDownItems={howItWorks}>
+                <NavButton text="How&nbsp;it&nbsp;works" dropDown={true} dropDownItems={howItWorks} dropDownStyles="hover:!text-stone-800 !font-bold !justify-start !py-3 !cursor-default">
                     <ChevronDownIcon className="h-3 w-3" />
                 </NavButton>
-                <NavButton href="/info/about-us" text="About&nbsp;Us" />
-                <NavButton href="/info/contact-us" text="Contact&nbsp;Us" />
+                <NavButton href="/welcome/info/about-us" text="About&nbsp;Us" />
+                <NavButton href="/welcome/info/contact-us" text="Contact&nbsp;Us" />
             </section>
             
             {/* Hamburger Button */}        

@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const nunito = Nunito ({subsets: ['latin']});
 
-export default function Logo () {
+export default function Logo ({textColor="text-stone-800", iconColor="text-sky-700 hover:text-blue-500"}) {
     return (
-        <Link href="/" className="flex flex-row items-center md:w-5/12 lg:w-6/12">
-            <CodeBracketSquareIcon className="h-7 w-7 text-sky-400 cursor-pointer"/>
-            <h1 className={`hidden sm:block text-2xl font-bold ${nunito.className} cursor-pointer`}>Budget&nbsp;Tracker</h1>
+        <Link href="/welcome" className={`flex flex-row items-center ${iconColor}`}>
+            <CodeBracketSquareIcon className="h-7 w-7 cursor-pointer"/>
+            <h1 className={`hidden sm:block text-2xl font-bold ${nunito.className} ${textColor} cursor-pointer`}>Budget&nbsp;Tracker</h1>
         </Link>
     );
 }
