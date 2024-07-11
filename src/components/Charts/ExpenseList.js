@@ -1,5 +1,5 @@
 import formatMoney from "@/utils/formatMoney";
-export default function ExpenseList ({ expenses }) {
+export default function ExpenseList ({ expenses, setEditExpense, deleteExpense }) {
     return (
         <div className="block w-fit p-6 rounded-lg shadow bg-gray-800 border-gray-700 hover:bg-gray-700">
 
@@ -7,10 +7,17 @@ export default function ExpenseList ({ expenses }) {
             <div className="font-normal text-gray-400">
                 <ul>
                     {expenses.map(item => (
-                    
                     <li className="flex justify-between gap-4" key={item.id}>
                         <p>{item.category}:</p>
-                        <p>{formatMoney(item.amount)} on {item.date}</p>
+                        <div className="flex gap-4">
+                            <p>{formatMoney(item.amount)} on {item.date}</p>
+                            {setEditExpense != null &&
+                            <button onClick={() => setEditExpense(item)}>Edit</button>
+                            }
+                            {deleteExpense != null &&
+                            <button onClick={() => deleteExpense(item.id)}>Delete</button>
+                            }
+                        </div>
                     </li>
                     ))}
                 </ul>
