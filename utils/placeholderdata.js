@@ -19,7 +19,11 @@ const budgetData = {
       { id: 1, category: "Groceries", amount: 500, date: "2024-07-02" },
       { id: 2, category: "Aquarium Plants", amount: 120, date: "2024-07-03" },
       { id: 3, category: "Bet w/ Francine", amount: 4, date: "2024-07-12" }
-      // More expenses...
+    ],
+    budgets: [
+      { id: 1, category: "Groceries", planned: 600, actual: 500 },
+      { id: 2, category: "Utilities", planned: 300, actual: 300 },
+      { id: 3, category: "Entertainment", planned: 250, actual: 300 },
     ],
     savingsGoals: [
       { id: 1, goal: "Emergency Fund", amount: 2000, progress: 1000 },

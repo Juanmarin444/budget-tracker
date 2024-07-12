@@ -20,7 +20,7 @@ const links = [
   // { name: 'Overview', href: '/dashboard/overview', icon: ChartPieIcon },
   { name: 'Income Management', href: '/dashboard/income-management', icon: BanknotesIcon },
   { name: 'Expense Management', href: '/dashboard/expense-management', icon: CreditCardIcon },
-  { name: 'Bills and Debt', href: '/dashboard/bills-and-debt', icon: ScaleIcon },
+  { name: 'Budget Management', href: '/dashboard/budget-management', icon: ScaleIcon },
   { name: `${budgetData.user.name}`, href:'/dashboard/user-profile', icon: UserIcon }
 ];
 

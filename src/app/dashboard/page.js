@@ -1,3 +1,4 @@
+import BudgetList from "@/src/components/Charts/BudgetList";
 import Bills from "../../components/Charts/Bills";
 import Debts from "../../components/Charts/Debts";
 import ExpenseList from "../../components/Charts/ExpenseList";
@@ -13,7 +14,8 @@ export default function Page() {
         <h1 className="text-3xl font-bold pb-10">Home</h1>
         <div className="flex flex-row w-full justify-center flex-wrap gap-8">
             <Summary overview={data.overview} />
-            <IncomeList income={data.income}/>
+            <BudgetList budgets={data.budgets} />
+            <IncomeList income={data.income} />
             <ExpenseList expenses={data.expenses} />
             <SavingsGoals savingsGoals={data.savingsGoals} />
             <Debts debts={data.debts} />
