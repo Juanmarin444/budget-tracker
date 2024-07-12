@@ -25,9 +25,22 @@ const budgetData = {
       { id: 2, category: "Utilities", planned: 300, actual: 300 },
       { id: 3, category: "Entertainment", planned: 250, actual: 300 },
     ],
+    cashFlow: {
+      currentMonth: {
+        totalIncome: 5000,
+        totalExpenses: 3000,
+        netCashFlow: 2000,
+      },
+      history: [
+        { month: "2024-06", totalIncome: 4000, totalExpenses: 2200, netCashFlow: 1800 },
+        { month: "2024-05", totalIncome: 4500, totalExpenses: 3000, netCashFlow: 1500 },
+        { month: "2024-04", totalIncome: 3900, totalExpenses: 2850, netCashFlow: 1050 },
+      ],
+    },
     savingsGoals: [
-      { id: 1, goal: "Emergency Fund", amount: 2000, progress: 1000 },
-      { id: 1, goal: "RTX 4080 Noctua Edition", amount: 1749.99, progress: 200 },
+      { id: 1, goal: "Emergency Fund", amount: 5000, progress: 1000, targetDate: "2024-12-31" },
+      { id: 1, goal: "RTX 4080 Noctua Edition", amount: 1749.99, progress: 200, targetDate: "2024-09-20" },
+      { id: 2, goal: "Vacation", amount: 3000, progress: 1500, targetDate: "2024-08-15" },
     ],
     debts: [
       { id: 1, type: "Credit Card", amount: 500, dueDate: "2024-07-20" },

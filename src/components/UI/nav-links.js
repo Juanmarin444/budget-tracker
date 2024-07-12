@@ -21,6 +21,7 @@ const links = [
   { name: 'Income Management', href: '/dashboard/income-management', icon: BanknotesIcon },
   { name: 'Expense Management', href: '/dashboard/expense-management', icon: CreditCardIcon },
   { name: 'Budget Management', href: '/dashboard/budget-management', icon: ScaleIcon },
+  { name: 'Cash Flow Management', href: '/dashboard/cash-flow-management', icon: ChartPieIcon },
   { name: `${budgetData.user.name}`, href:'/dashboard/user-profile', icon: UserIcon }
 ];
 
