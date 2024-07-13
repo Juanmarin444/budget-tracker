@@ -39,8 +39,8 @@ const budgetData = {
     },
     savingsGoals: [
       { id: 1, goal: "Emergency Fund", amount: 5000, progress: 1000, targetDate: "2024-12-31" },
-      { id: 1, goal: "RTX 4080 Noctua Edition", amount: 1749.99, progress: 200, targetDate: "2024-09-20" },
-      { id: 2, goal: "Vacation", amount: 3000, progress: 1500, targetDate: "2024-08-15" },
+      { id: 2, goal: "RTX 4080 Noctua Ed", amount: 1749.99, progress: 200, targetDate: "2024-09-20" },
+      { id: 3, goal: "Vacation", amount: 3000, progress: 1500, targetDate: "2024-08-15" },
     ],
     debts: [
       { id: 1, type: "Credit Card", amount: 500, dueDate: "2024-07-20" },
@@ -48,9 +48,9 @@ const budgetData = {
     ],
     bills: [
       { id: 1, type: "Rent", amount: 2000, dueDate: "2024-07-10" },
-      { id: 1, type: "Wi-Fi", amount: 60, dueDate: "2024-07-10" },
-      { id: 1, type: "PG&E", amount: 391, dueDate: "2024-07-10" },
-      { id: 1, type: "City Utilities", amount: 140, dueDate: "2024-07-10" },
+      { id: 2, type: "Wi-Fi", amount: 60, dueDate: "2024-07-10" },
+      { id: 3, type: "PG&E", amount: 391, dueDate: "2024-07-10" },
+      { id: 4, type: "City Utilities", amount: 140, dueDate: "2024-07-10" },
     ],
 };
   

@@ -6,7 +6,8 @@ import {
   UserIcon,
   ChartPieIcon,
   BanknotesIcon,
-  ScaleIcon
+  ScaleIcon,
+  HeartIcon
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -18,11 +19,17 @@ import { budgetData } from '@/utils/placeholderdata';
 const links = [
   { name: 'Home', href: '/dashboard', icon: HomeIcon },
   // { name: 'Overview', href: '/dashboard/overview', icon: ChartPieIcon },
-  { name: 'Income Management', href: '/dashboard/income-management', icon: BanknotesIcon },
-  { name: 'Expense Management', href: '/dashboard/expense-management', icon: CreditCardIcon },
-  { name: 'Budget Management', href: '/dashboard/budget-management', icon: ScaleIcon },
-  { name: 'Cash Flow Management', href: '/dashboard/cash-flow-management', icon: ChartPieIcon },
-  { name: `${budgetData.user.name}`, href:'/dashboard/user-profile', icon: UserIcon }
+  { name: 'Income', href: '/dashboard/income-management', icon: BanknotesIcon },
+  { name: 'Expenses', href: '/dashboard/expense-management', icon: CreditCardIcon },
+  { name: 'Budgeting', href: '/dashboard/budget-management', icon: ScaleIcon },
+  { name: 'Cash Flow', href: '/dashboard/cash-flow-management', icon: ChartPieIcon },
+  { name: 'Savings Goals', href: '/dashboard/savings-goals', icon: HeartIcon },
+  { name: `${budgetData.user.name}`, href:'/dashboard/user-profile', icon: UserIcon },
+  { name: 'Income', href: '/dashboard/income-management', icon: BanknotesIcon },
+  { name: 'Expenses', href: '/dashboard/expense-management', icon: CreditCardIcon },
+  { name: 'Budgeting', href: '/dashboard/budget-management', icon: ScaleIcon },
+  { name: 'Cash Flow', href: '/dashboard/cash-flow-management', icon: ChartPieIcon },
+  { name: 'Savings Goals', href: '/dashboard/savings-goals', icon: HeartIcon },
 ];
 
 export default function NavLinks() {
