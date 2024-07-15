@@ -8,9 +8,12 @@ export default function Page(){
     const data = budgetData;
     return(
         <div>
-            <CashFlowOverview currentMonth={data.cashFlow.currentMonth} />
-            <CashFlowHistory history={data.cashFlow.history} />
-            <CashFlowGraph history={data.cashFlow.history} />
+            <h1 className="text-3xl font-bold pb-10">Cash Flow</h1>
+            <div className="flex flex-row flex-wrap w-full justify-around gap-8">
+                <CashFlowOverview currentMonth={data.cashFlow.currentMonth} />
+                <CashFlowHistory history={data.cashFlow.history} />
+                <CashFlowGraph history={data.cashFlow.history} />
+            </div>
         </div>
     );
 }
